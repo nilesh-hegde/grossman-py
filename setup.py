@@ -6,12 +6,11 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setup(
     name="grossman",
     version="0.1.0",
-    author="YOUR NAME",
-    author_email="your.email@example.com",
+    author="Nilesh Hegde",
     description="Python client for econometrics teaching datasets (grossman)",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/YOUR_USERNAME/grossman-py",
+    url="https://github.com/nilesh-hegde/grossman-py",
     packages=find_packages(),
     python_requires=">=3.8",
     install_requires=[
