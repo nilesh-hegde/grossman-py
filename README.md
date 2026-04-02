@@ -20,16 +20,16 @@ grossman.list()
 df = grossman.load("psid")
 
 # Load a variant
-df\_ub = grossman.load("psid", variant="unbalanced")
+df_ub = grossman.load("psid", variant="unbalanced")
 
 # Access variable labels
-df.attrs\["labels"]
+df.attrs["labels"]
 
 # Force re-download (clears cache for this dataset)
 df = grossman.load("psid", refresh=True)
 
 # Clear all cached data
-grossman.clear\_cache()
+grossman.clear_cache()
 ```
 
 **Important:** Always use the `grossman.` prefix — do NOT call `from grossman import list, load`. The package exports functions named `list` and `load`, which shadow Python builtins. This is the same pattern as the R package's `grossman::list()` and `grossman::load()`.
@@ -63,7 +63,7 @@ grossman.clear\_cache()
 
 ```bash
 # Install dev dependencies
-pip install -e ".\[dev]"
+pip install -e ".[dev]"
 
 # Run offline tests only (no network needed)
 pytest -m "not online"
